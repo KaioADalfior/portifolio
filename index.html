@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaio Andrião Dalfior | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+
+        .tech-icon:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <div id="vanta-bg"></div>
+
+    <!-- Floating Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradiant-text">
+                    <span class="gradient-text">Kaio D.</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-blue-400 transition">Sobre</a>
+                <a href="#skills" class="hover:text-purple-400 transition">Habilidades</a>
+                <a href="#projects" class="hover:text-pink-400 transition">Projetos</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contato</a>
+            </div>
+
+            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        Olá! Eu sou <span class="gradient-text">Kaio Andrião Dalfior</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-300 mb-8">
+                        Full Stack Developer | C# .NET, PHP 8, React.js & Node.js | Front-end (HTML5, CSS3, JS) &
+                        Back-end | SQL | Test Automation (JUnit & Selenium) | FiveM Script Expert | Security |
+                        Experienced Technology Instructor </h2>
+                    <div class="flex space-x-4">
+                        <a href="#contact"
+                            class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition">
+                            Contato
+                        </a>
+                        <a href="#projects"
+                            class="px-6 py-3 border border-gray-700 rounded-lg font-medium hover:bg-gray-800 transition">
+                            Projetos
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/30">
+                            <img src="img.jpg" alt="Profile"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="absolute -bottom-5 -right-5 bg-gray-800 rounded-full p-3 border-2 border-blue-400/50">
+                            <div class="bg-gradient-to-r from-blue-400 to-purple-500 rounded-full p-2">
+                                <i data-feather="code" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center gradiant-text">Sobre Mim</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800/50 rounded-xl p-8 backdrop-blur-sm border border-gray-700">
+                    <p class="mb-6 text-gray-300">
+                        Sou estudante do último período de Análise e Desenvolvimento de Sistemas pelo IFES – Campus
+                        Alegre, com experiência em desenvolvimento de sistemas, suporte técnico e gestão pedagógica.
+                    </p>
+                    <p class="mb-6 text-gray-300">
+                        Tenho conhecimento em C, Python, Java, Desenvolvimento Web e domínio em C#, aplicado em projetos
+                        Web, Desktop e Mobile (Xamarin). Tenho interesse nas áreas de Redes de Computadores e Segurança
+                        da Informação, com foco em boas práticas e inovação tecnológica.
+                    </p>
+                    <p class="mb-6 text-gray-300">
+                        Atuei como Coordenador Pedagógico e Instrutor de TI na Microlins, desenvolvendo habilidades de
+                        liderança, didática e treinamento de equipes. Como freelancer, tenho experiência no
+                        desenvolvimento de servidores FiveM Roleplay, trabalhando com scripts em Lua e NUI, bancos de
+                        dados, personalização de mods e produção multimídia.
+                    </p>
+                    <p class="text-gray-300">
+                        Participei de projetos acadêmicos envolvendo dispositivos de monitoramento de sinais vitais com
+                        microcontroladores, integrando hardware e software. Atualmente, integro projetos de
+                        desenvolvimento e manutenção de servidores FiveM, sempre aplicando boas práticas de programação
+                        e buscando aprimoramento contínuo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center gradiant-text">Stacks</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Programming Languages -->
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-blue-400 mb-3"></i>
+                    <span class="font-medium">C</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-purple-400 mb-3"></i>
+                    <span class="font-medium">C#</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-pink-400 mb-3"></i>
+                    <span class="font-medium">C++</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-orange-400 mb-3"></i>
+                    <span class="font-medium">HTML5</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-blue-300 mb-3"></i>
+                    <span class="font-medium">CSS3</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-yellow-300 mb-3"></i>
+                    <span class="font-medium">JavaScript</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-green-400 mb-3"></i>
+                    <span class="font-medium">Python</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="code" class="w-10 h-10 text-red-400 mb-3"></i>
+                    <span class="font-medium">Java</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="database" class="w-10 h-10 text-indigo-400 mb-3"></i>
+                    <span class="font-medium">MySQL</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="database" class="w-10 h-10 text-green-500 mb-3"></i>
+                    <span class="font-medium">Firebase</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="cpu" class="w-10 h-10 text-cyan-400 mb-3"></i>
+                    <span class="font-medium">React Native</span>
+                </div>
+                <div class="tech-icon bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <i data-feather="box" class="w-10 h-10 text-blue-500 mb-3"></i>
+                    <span class="font-medium">Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center gradiant-text">Alguns Projetos</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+                        <i data-feather="layers" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">MicroLeads</h3>
+                        <p class="text-gray-300 mb-4">Site feito em HTML, CSS, JAVASCRIPT e PHP. O banco de dados
+                            desenvolvido em MySQL.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-yellow-900/50 text-yellow-300 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm">PHP</span>
+                            <span class="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <a href="https://microlinsalegre.wuaze.com/" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                            Visualizar <i data-feather="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
+                        <i data-feather="scissors" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">HomeCorte</h3>
+                        <p class="text-gray-300 mb-4">Sistema de barbearia desenvolvido para TCC II, focado em
+                            agendamento de serviços à domicílio.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-yellow-900/50 text-yellow-300 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm">PHP</span>
+                            <span class="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">Docker</span>
+                        </div>
+                        <a href="https://homecorte.wuaze.com/" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                            Visualizar <i data-feather="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-pink-600 to-red-600 flex items-center justify-center">
+                        <i data-feather="car" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Consultar Tabela FIPE</h3>
+                        <p class="text-gray-300 mb-4">Aplicativo mobile para consulta da tabela FIPE de veículos.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm">React
+                                Native</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">API</span>
+                        </div>
+                        <a href="https://snack.expo.dev/@kaioad/kaiodalfior---trabalhopdm" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                            Visualizar <i data-feather="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-48 bg-gradient-to-r from-red-600 to-orange-600 flex items-center justify-center">
+                        <i data-feather="shopping-bag" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">DAK Store</h3>
+                        <p class="text-gray-300 mb-4">Sistema de compra e venda para disciplina de Programação para
+                            Dispositivos Móveis.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm">React
+                                Native</span>
+                            <span class="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm">Firebase</span>
+                        </div>
+                        <a href="https://snack.expo.dev/@kaioad/98a395" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                            Visualizar <i data-feather="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-gray-400">E muitos outros projetos de servidores FiveM Roleplay, como América Roleplay e
+                    Tropical Roleplay.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center gradiant-text">Cursos e Formação</h2>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Educação Formal -->
+                    <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-500/20 p-3 rounded-full mr-4">
+                                <i data-feather="book" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Formação Acadêmica</h3>
+                        </div>
+                        <p class="text-gray-300">
+                            Estudante do último período de Análise e Desenvolvimento de Sistemas no IFES – Campus Alegre
+                        </p>
+                    </div>
+
+                    <!-- Certificações -->
+                    <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-500/20 p-3 rounded-full mr-4">
+                                <i data-feather="award" class="w-6 h-6 text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Certificações</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Do ZERO ao Primeiro Jogo com Unity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Criação de Mapa 2D, Tilemap com Unity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Blender3D</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Pacote Office</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Linguagens de programação</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Desenvolvimento de landing pages</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Comunicação clara e didática</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Testes funcionais com Selenium WebDriver: Do básico ao GRID</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Desenvolvimento em C# - 1, 2, 3 e 4</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Testes Automáticos + Curso COMPLETO de Teste de Software</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>IT Support Management: Central de Serviços de TI</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Curso FIVEM GTA RP (Criação de Servidores de Roleplay)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-4 h-4 text-green-400 mr-2 mt-1"></i>
+                                <span>Dominando Pacote Office</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Outros Cursos e Habilidades -->
+                <div class="mt-8">
+                    <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+                        <h3 class="text-xl font-bold mb-4">Outras Habilidades e Cursos</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-gray-700 rounded-full">Unity Game Dev</span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full">Blender3D</span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full">Pacote Office</span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full">Landing Pages</span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full">Suporte de TI</span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full">Ensino e Treinamento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center gradiant-text">Entre em Contato</h2>
+
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Informações de Contato</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="w-5 h-5 text-blue-400 mr-3 mt-1"></i>
+                                <span>kaio.andriao.dalfior@gmail.com</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="w-5 h-5 text-green-400 mr-3 mt-1"></i>
+                                <span>(28) 99940-1258</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="w-5 h-5 text-red-400 mr-3 mt-1"></i>
+                                <span>Alegre - ES, Brasil</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="linkedin" class="w-5 h-5 text-blue-300 mr-3 mt-1"></i>
+                                <a href="https://linkedin.com/in/kaiodalfior" target="_blank"
+                                    class="hover:underline">linkedin.com/in/kaiodalfior</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+                        <h3 class="text-xl font-bold mb-4">Disponível Para</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-400 mr-2 mt-1"></i>
+                                <span>Projetos Freelancer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-400 mr-2 mt-1"></i>
+                                <span>Vagas em tempo integral</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-400 mr-2 mt-1"></i>
+                                <span>Consultoria</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-6">Envie uma Mensagem</h3>
+                    <form class="space-y-5">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Seu Nome</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="João Silva" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="joao@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Sua
+                                Mensagem</label>
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Olá Kaio, gostaria de conversar sobre..." required></textarea>
+                        </div>
+                        <button id="btnMessage" type="button"
+                            class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
+        <div class="bg-gray-800 rounded-xl p-8 max-w-md text-center border border-gray-700">
+            <h3 class="text-xl font-bold mb-4 text-white">INFUNCIONAL! HAHAHAHAHA PEGADINHA!</h3>
+            <p class="text-gray-300 mb-6">Desenvolvedor: Kaio Andrião Dalfior &copy; 2025</p>
+            <button id="closeModal"
+                class="px-6 py-2 bg-blue-500 rounded-lg text-white font-medium hover:opacity-90 transition">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold gradiant-text">Kaio Dalfior</h2>
+                    <p class="text-gray-400 mt-2">Full Stack Developer & Tech Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-300 transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-pink-500 transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2023 Kaio Andrião Dalfior. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x111827,
+            size: 0.8
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.id = 'mobile-menu';
+        mobileMenu.className = 'hidden fixed inset-0 bg-gray-900/95 z-50 flex flex-col items-center justify-center';
+        mobileMenu.innerHTML = `
+            <button class="absolute top-6 right-6 p-2" id="close-mobile-menu">
+                <i data-feather="x" class="w-8 h-8 text-gray-400"></i>
+            </button>
+            <div class="flex flex-col space-y-8 text-center">
+                <a href="#about" class="text-2xl text-gray-200 hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="text-2xl text-gray-200 hover:text-purple-400 transition">Skills</a>
+                <a href="#projects" class="text-2xl text-gray-200 hover:text-pink-400 transition">Projects</a>
+                <a href="#contact" class="text-2xl text-gray-200 hover:text-indigo-400 transition">Contact</a>
+            </div>
+        `;
+        document.body.appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            feather.replace();
+        });
+
+        document.addEventListener('click', (e) => {
+            if (e.target.id === 'close-mobile-menu' || e.target.closest('#close-mobile-menu')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Animation for project cards on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+
+    <script>
+        const btn = document.getElementById('btnMessage');
+        const modal = document.getElementById('modal');
+        const close = document.getElementById('closeModal');
+
+        btn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        close.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Fecha ao clicar fora do modal
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
